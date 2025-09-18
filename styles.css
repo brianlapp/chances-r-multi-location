@@ -176,7 +176,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--overlay-dark), rgb(175 8 0 / 30%));
+    background: linear-gradient(135deg, var(--overlay-dark), rgb(175 8 0 / 20%));
     z-index: 2;
 }
 
@@ -281,10 +281,10 @@ body {
 }
 
 .service-icon {
-    width: 60px;
-    height: 60px;
+    max-width: 100%;
+    max-height: 150px;
     margin-bottom: 1rem;
-    border-radius: 50%;
+    border-radius: 12px;
     overflow: hidden;
     display: flex;
     align-items: center;
