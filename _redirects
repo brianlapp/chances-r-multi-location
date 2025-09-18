@@ -1,0 +1,8 @@
+# Netlify redirects for Chances R multi-location site
+
+# Location-specific redirects
+/west/*  /west/index.html  200
+/east/*  /east/index.html  200
+
+# Fallback for SPA
+/*  /index.html  200
