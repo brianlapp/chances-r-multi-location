@@ -154,7 +154,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--overlay-dark), rgb(175 8 0 / 60%));
+    background: linear-gradient(135deg, var(--overlay-dark), rgb(175 8 0 / 20%));
     z-index: 2;
 }
 
