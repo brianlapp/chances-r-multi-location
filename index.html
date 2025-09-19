@@ -66,7 +66,12 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/logos/1758136718908-logo">
     
+    <!-- Preload critical hero image for LCP optimization -->
+    <link rel="preload" fetchpriority="high" as="image" href="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/hero/1758136721195-hero?format=webp&quality=75&width=800" type="image/webp">
+    
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!-- Styles -->
@@ -76,10 +81,12 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-background">
-            <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/hero/1758136721195-hero" 
+            <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/hero/1758136721195-hero?format=webp&quality=75&width=800" 
                  alt="Chances R' Restaurant" 
                  loading="eager" 
-                 decoding="sync">
+                 decoding="sync"
+                 width="800"
+                 height="600">
         </div>
         <div class="hero-overlay"></div>
         <div class="container">
@@ -107,10 +114,12 @@
                 <!-- West Location Card -->
                 <div class="location-card" data-location="west">
                     <div class="location-image">
-                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758136741325-dish-0" 
+                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/dishes/1758136741325-dish-0?format=webp&quality=75&width=600" 
                              alt="Chances R' West - Fish and Chips" 
                              loading="lazy" 
-                             decoding="async">
+                             decoding="async"
+                             width="600"
+                             height="400">
                         <div class="location-overlay"></div>
                         <div class="location-content">
                             <h2>Chances R' West</h2>
@@ -124,10 +133,12 @@
                 <!-- East Location Card -->
                 <div class="location-card" data-location="east">
                     <div class="location-image">
-                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136722845-photo-0" 
+                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136722845-photo-0?format=webp&quality=75&width=600" 
                              alt="Chances R' East - Dining Experience" 
                              loading="lazy" 
-                             decoding="async">
+                             decoding="async"
+                             width="600"
+                             height="400">
                         <div class="location-overlay"></div>
                         <div class="location-content">
                             <h2>Chances R' East</h2>
@@ -148,28 +159,28 @@
             <div class="services-grid">
                 <div class="service-item">
                     <div class="service-icon">
-                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136722845-photo-0" alt="All-Day Dining">
+                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136722845-photo-0?format=webp&quality=75&width=150" alt="All-Day Dining" width="150" height="150">
                     </div>
                     <h3>All-Day Dining</h3>
                     <p>Breakfast, lunch, and dinner with hearty classics and fresh specialties</p>
                 </div>
                 <div class="service-item">
                     <div class="service-icon">
-                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136724955-photo-1" alt="Fresh Ingredients">
+                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136724955-photo-1?format=webp&quality=75&width=150" alt="Fresh Ingredients" width="150" height="150">
                     </div>
                     <h3>Fresh Ingredients</h3>
                     <p>Quality meals prepared with care and the finest ingredients</p>
                 </div>
                 <div class="service-item">
                     <div class="service-icon">
-                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136726771-photo-2" alt="Community Focused">
+                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136726771-photo-2?format=webp&quality=75&width=150" alt="Community Focused" width="150" height="150">
                     </div>
                     <h3>Community Focused</h3>
                     <p>A proud part of Ottawa's dining scene for over 40 years</p>
                 </div>
                 <div class="service-item">
                     <div class="service-icon">
-                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136728694-photo-3" alt="Catering Available">
+                        <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136728694-photo-3?format=webp&quality=75&width=150" alt="Catering Available" width="150" height="150">
                     </div>
                     <h3>Catering Available</h3>
                     <p>Perfect for family parties, office lunches, and special celebrations</p>
@@ -187,10 +198,12 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136722845-photo-0" 
+                    <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136722845-photo-0?format=webp&quality=75&width=400" 
                          alt="Chances R' Interior" 
                          loading="lazy" 
-                         decoding="async">
+                         decoding="async"
+                         width="400"
+                         height="300">
                 </div>
                 <div class="gallery-item">
                     <img src="https://wuufuewpbgciitslfvbl.supabase.co/storage/v1/object/public/restaurant-images/photos/1758136724955-photo-1" 
