@@ -151,19 +151,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Performance optimization: Lazy load images that are not immediately visible
+    // Performance optimization: Lazy load images - simplified (no opacity manipulation)
     const lazyImages = document.querySelectorAll('img[loading="lazy"]');
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
-                img.style.transition = 'opacity 0.3s ease';
-                img.style.opacity = '0';
-                
-                img.onload = () => {
-                    img.style.opacity = '1';
-                };
-                
+                // Just ensure the image is visible when it enters viewport
+                img.style.opacity = '1';
                 observer.unobserve(img);
             }
         });
