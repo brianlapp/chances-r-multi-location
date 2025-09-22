@@ -248,7 +248,20 @@ body {
 /* Services Overview */
 .services-overview {
     padding: 4rem 0;
-    background: var(--white);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.services-overview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(209, 42, 36, 0.03) 0%, rgba(209, 42, 36, 0.08) 100%);
+    pointer-events: none;
 }
 
 .services-overview h2 {
@@ -257,27 +270,34 @@ body {
     text-align: center;
     color: var(--text-dark);
     margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .service-item {
     text-align: center;
     padding: 2rem 1.5rem;
-    background: var(--secondary-color);
-    border-radius: 12px;
+    background: var(--white);
+    border-radius: 16px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid transparent;
+    border: 2px solid rgba(209, 42, 36, 0.1);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .service-item:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-light);
-    border-color: var(--primary-light);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(209, 42, 36, 0.15);
+    border-color: var(--primary-color);
 }
 
 .service-icon {
