@@ -441,14 +441,13 @@ body {
 }
 
 .deal-image {
-    height: 350px;
+    height: 450px;
     overflow: hidden;
 }
 
 .deal-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .deal-content {
