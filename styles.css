@@ -271,7 +271,7 @@ body {
 }
 
 .deal-image {
-    height: 450px;
+    max-height: 450px;
     overflow: hidden;
 }
 
