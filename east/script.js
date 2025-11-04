@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    const reservationButtons = document.querySelectorAll('a[href*="sevenrooms"]');
+    const reservationButtons = document.querySelectorAll('a[href*="libroreserve"]');
     reservationButtons.forEach(button => {
         button.addEventListener('click', function() {
             console.log('Reservation initiated');
